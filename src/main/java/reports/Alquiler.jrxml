@@ -1,0 +1,97 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="Blank_A4" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bd17e39e-819d-4363-af2f-e9d90f41a17b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<query language="sql"><![CDATA[]]></query>
+	<field name="numExpediente" class="java.lang.Integer"/>
+	<field name="fechaEntrada" class="java.sql.Date"/>
+	<field name="codReferencia" class="java.lang.String"/>
+	<field name="estado" class="java.lang.String"/>
+	<field name="facturacion" class="java.lang.Double"/>
+	<field name="nombreCliente" class="java.lang.String"/>
+	<field name="dniCliente" class="java.lang.String"/>
+	<field name="correoCliente" class="java.lang.String"/>
+	<field name="telefonoCliente" class="java.lang.Integer"/>
+	<field name="tiempoEstimado" class="java.lang.Integer"/>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="568f60dd-0103-459c-9c05-306083c70a2b" x="187" y="19" width="180" height="40" fontSize="25.0" hTextAlign="Center">
+			<text><![CDATA[Alquiler]]></text>
+			<box>
+				<pen lineWidth="1.0" lineStyle="Solid"/>
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+	</title>
+	<detail>
+		<band height="273" splitType="Stretch">
+			<element kind="staticText" uuid="de4e3db6-4187-4462-8121-07a57f60e131" x="20" y="70" width="120" height="20">
+				<text><![CDATA[Número de expediente]]></text>
+			</element>
+			<element kind="staticText" uuid="1d848764-b1d9-4cfa-b909-88a4316910a0" x="20" y="50" width="100" height="20">
+				<text><![CDATA[Código de referencia]]></text>
+			</element>
+			<element kind="staticText" uuid="8b0985cc-babf-439c-83dd-8cc607739c23" x="20" y="90" width="100" height="20">
+				<text><![CDATA[Fecha entrada]]></text>
+			</element>
+			<element kind="staticText" uuid="cc14fd00-7200-4898-b56a-66979d8c50cb" x="20" y="110" width="100" height="20">
+				<text><![CDATA[Tiempo estimado]]></text>
+			</element>
+			<element kind="staticText" uuid="8d62d1be-adee-4766-9b15-70de9ea2f05c" x="20" y="130" width="100" height="20">
+				<text><![CDATA[Estado]]></text>
+			</element>
+			<element kind="staticText" uuid="9f4c0743-bbee-4b17-8ce4-9b9cd91fbde4" x="20" y="20" width="130" height="20" fontSize="13.0">
+				<text><![CDATA[Datos recopilados]]></text>
+			</element>
+			<element kind="textField" uuid="fd0cc259-fdf1-4947-b4da-a3645266dcbe" x="150" y="50" width="240" height="20">
+				<expression><![CDATA[$F{codReferencia}]]></expression>
+			</element>
+			<element kind="textField" uuid="7fac5257-baaa-4736-81bb-7751a0010aae" x="150" y="70" width="240" height="20">
+				<expression><![CDATA[$F{numExpediente}]]></expression>
+			</element>
+			<element kind="textField" uuid="3c3adf2f-1669-41e4-986b-c30cde6e0c7e" x="150" y="130" width="240" height="20">
+				<expression><![CDATA[$F{estado}]]></expression>
+			</element>
+			<element kind="staticText" uuid="34edef5f-7613-4786-9f6c-1077ff682ca4" x="20" y="150" width="100" height="20">
+				<text><![CDATA[Nombre del cliente]]></text>
+			</element>
+			<element kind="staticText" uuid="983358b5-279e-442c-b086-e97fd314163b" x="20" y="170" width="100" height="20">
+				<text><![CDATA[DNI del cliente]]></text>
+			</element>
+			<element kind="staticText" uuid="0a5c348f-b782-4657-a282-9ee67ae4cc28" x="20" y="190" width="100" height="20">
+				<text><![CDATA[Correo del cliente]]></text>
+			</element>
+			<element kind="staticText" uuid="c9a01ffe-1c38-4dda-bf76-4c6153f2ae07" x="20" y="210" width="100" height="20">
+				<text><![CDATA[Telefono del cliente]]></text>
+			</element>
+			<element kind="textField" uuid="a6fcd639-9982-4d44-9b80-4ab14914e6ac" x="150" y="150" width="240" height="20">
+				<expression><![CDATA[$F{nombreCliente}]]></expression>
+			</element>
+			<element kind="textField" uuid="9eb4d174-3d85-42bd-b72f-96dba7e80744" x="150" y="170" width="240" height="20">
+				<expression><![CDATA[$F{dniCliente}]]></expression>
+			</element>
+			<element kind="textField" uuid="025239c0-4a3c-4754-9689-771626bf3d82" x="150" y="190" width="240" height="20">
+				<expression><![CDATA[$F{correoCliente}]]></expression>
+			</element>
+			<element kind="textField" uuid="58694f3b-206d-410b-af5e-1fbcfbb2babd" x="150" y="210" width="240" height="20">
+				<expression><![CDATA[$F{telefonoCliente}]]></expression>
+			</element>
+			<element kind="staticText" uuid="009e64dd-aee8-45aa-a102-2810b238e9f9" x="20" y="230" width="100" height="20">
+				<text><![CDATA[Facturación]]></text>
+			</element>
+			<element kind="textField" uuid="261a7872-dc59-40c1-9791-a16585141912" x="150" y="230" width="240" height="20">
+				<expression><![CDATA[$F{facturacion}]]></expression>
+			</element>
+			<element kind="textField" uuid="c0707b2e-123f-4bcf-88d4-33f6128efb4c" x="150" y="90" width="240" height="20">
+				<expression><![CDATA[new java.text.SimpleDateFormat("dd/MM/yyyy").format($F{fechaEntrada})]]></expression>
+			</element>
+			<element kind="textField" uuid="af91147c-ecd6-46ca-8a37-b92593f7c562" x="150" y="110" width="240" height="20">
+				<expression><![CDATA[$F{tiempoEstimado}]]></expression>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+</jasperReport>
